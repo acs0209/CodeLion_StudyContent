@@ -1,0 +1,103 @@
+/** 
+float는 둥둥떠다니면서 정렬하는 방식 float으로 지정된 요소는 html내에서 둥둥 떠다녀서
+다른 요소들과 겹칠 수가 있어 가두리를 만들어서 겹치지 않게 해야한다
+일단 p태그 둘을 div태그로 묶는다 그리고 묶은 div태그에 class이름을 설정하고
+그 클래스 이름에 overflow: hidden;을 하면 된다
+overflow: hidden;은 float으로 뛰어져 있는 요소들을 다 묶어주고 그 다음에 오는 html요소들이 float 영향을 받지 않게 해준다 
+.float-wrap {
+    overflow: hidden;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body,h1,h2 {
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    min-width: fit-content;
+}
+
+h1 {
+    font-size:36px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+
+h2 {
+    font-size:20px;
+    color:#282828;
+    font-weight: lighter;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5px;
+}
+
+.name-text {
+    font-size:16px;
+    color:#7c7c7c;
+    font-weight: bold;
+}
+
+.about-me-text {
+    font-size:10px;
+    line-height: 16px;
+}
+
+.mainbox {
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom:24px;
+}
+
+.title-text {
+    font-size:11px;
+    font-weight: bold;
+    color: #282828;
+    float: left;
+}
+
+.year-text{
+    font-size:11px;
+    font-weight: bold;
+    color: #282828;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
+
+.float-wrap {
+    overflow: hidden;
+}
+
+.desc-text {
+    font-size: 9px;
+}
+
+.desc-subtext {
+    font-size: 9px;
+    color: #282828;
+    padding-left: 16px;
+}

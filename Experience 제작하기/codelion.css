@@ -1,0 +1,93 @@
+/**
+line-height 줄간 간격을 넓혀보는 코드 폰트 크기 10px 간격 16px하면 좋다
+
+위아래로 각각 <p>태그가 있다 근데 이 두 <p>태그를 한줄로 붙이고 하나는 왼쪽 끝에 하나는 오른쪽 끝에 붙이고 싶다
+즉 한줄에서 좌우 정렬을 할려면 어떻게 해야 할까
+text-align : left를 float: left로 text-align: right를 float: right로 바꾼다
+여기서 float은 둥둥떠다니다라는 뜻을 가지고 있다 즉 float: left는 html문서에서 둥둥 떠다니데 왼쪽으로 붙어서 떠다니다
+라는 소리다
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body, h1, h2 {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    min-width: fit-content;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color:#282828;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+}
+
+.name-text {                                  
+    font-size: 17px;                         
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.mainbox {
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1)
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+.name-text {
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.about-me-text {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.title-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    float: left;
+}
+
+.year-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    float: right;
+}

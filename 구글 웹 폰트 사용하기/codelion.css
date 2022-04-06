@@ -1,0 +1,73 @@
+/**
+@import url() 해서 폰트를 사용하면 된다
+font-family을 통해 폰트를 적용한다
+* 은 css문서 전체 적용한다라는 의미
+브라우저 별로 margin값이 다를 수 있다 padding의 기본값도 다를 수 있다
+그러면 같은 태그라도 서로 다르게 보일 수 가 있다 그래서 0px로 전부 초기화를 하면 좋다
+body, h1, h2태그에 margin과 padding을 0px로 초기화를 할꺼다
+
+section태그는 div태그와 완전히 똑같다 html요소를 꾸미기 위해서 묶어주는 역할만한다
+div를 남발해서 사용하면 가독성이 떨어진다 그래서 div의 의미를 나누기 위해 만든게 section이다
+하는건 div와 똑같다 div와 section을 적절히 섞어쓴다면 가독성이 좋아진다
+section과 똑같은 성질의 태그는 article태그도 있다 아래는 예시 코드다
+<section>
+    <div>
+        <div>
+            <article>
+                content1
+            </article>
+            <article>
+                content2
+            </article>
+        </div>
+        <div>
+            <article>
+                content3
+            </article>
+        </div>
+        <div>    
+            <article>
+                content4
+            </article>
+        </div>
+    </div>
+</section>
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body,h1,h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-width: fit-content;
+}
+
+.name-text {                                  
+    font-size: 17px;                         
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.mainbox {
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1)
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}

@@ -1,0 +1,54 @@
+/**
+font-style: italic -> font을 살짝 기울게 해준다
+박스에 선을 긋는것은 border을 이용 근데 아래에만 선을 그을려면 border-bottom: 1px solid #ebebeb이렇게 하면 된다
+선을 그으면 바로 아래에 있는 글씨와 너무 붙어 있다 그거를 뛰울려면 padding과 margin을 추가하면 된다
+모두 줘도 되고 하나만 줘도 된다
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body,h1,h2 {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    min-width: fit-content;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #282828;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 16px;
+    padding-bottom: 5px;
+}
+
+.mainbox {
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}

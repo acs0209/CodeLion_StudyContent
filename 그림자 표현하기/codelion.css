@@ -1,0 +1,32 @@
+/** 
+박스에 그림자 넣는법: box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1)
+첫번째 숫자 0의 의미: 가로축으로 그림자가 얼마나 뻗어나가는지 지정한다 양이면 오른쪽으로 음수이면 왼쪽으로 뻗어나간다
+두번째 숫자 1의 의미: y축으로 그림자를 이동한다 y축을 움직여 보면 x축과 비슷한 움직임을 보인다
+세번째 숫자 20의 의미: 그림자의 흐림정도 즉 블록 값이다
+네번째 숫자 0의 의미: 그림자의 퍼짐도 즉 스프레드 값이다
+마지막은 그림자의 색을 의미한다 rgb -> red, green, blue의 조합으로 색이 만들어 진다 0.1은 투명도를 의미한다
+1이 제일 탁한색 0이 제일 투명색 0.1은 10퍼센트의 투명도를 가진색을 말한다
+*/
+.name-text {                                  
+    font-size: 17px;                         
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.mainbox {
+    width: 610px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
